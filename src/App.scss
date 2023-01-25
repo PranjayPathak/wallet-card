@@ -1,0 +1,168 @@
+$background-secondary : #242736;
+$background-primary: #0A1412;
+$highlight-color: #353847;
+$highlight-color-green: #00FFA4;
+$font-primary: #dde1e6;
+$font-err: #ef4444;
+$font-secondary: #cbcbcb;
+
+.App {
+  font-family: sans-serif;
+  background-color: $background-primary;
+  height: 100vh;
+  width: 100vw;
+  padding: 5rem;
+  //  e text-align: center;
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 600;
+  background-color: $background-secondary;
+  color: $font-secondary;
+  box-shadow: 0px 0px 10px 2px $highlight-color-green;
+  margin: 2rem;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 0px 15px 2px $highlight-color-green;
+
+  }
+
+  &:active {
+    box-shadow: 0px 0px 10px 2px $highlight-color-green;
+  }
+}
+
+.wallet-card {
+  background-color: $background-secondary;
+  // min-height: 25rem;
+  width: 25rem;
+  border-radius: 0.5rem;
+  margin: auto;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0rem 0.5rem 0rem;
+    margin: 0 1rem;
+    border-bottom: 0.2rem double $highlight-color;
+
+    .token-actions {
+      display: flex;
+      gap: 0.5rem;
+
+      &__action {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.5rem;
+        width: 2.5rem;
+        background-color: $highlight-color-green;
+        border-radius: 20px;
+
+      }
+    }
+  }
+
+
+  &__body {
+    &__head {
+      background-color: $highlight-color;
+      padding: 0.5rem;
+      margin-top: 1rem;
+
+      &-data {
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+        &:first-child {
+          padding-bottom: 0.1rem;
+        }
+
+        span {
+          max-width: 50%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          // padding: 0.5rem;
+
+        }
+      }
+    }
+
+    &__data {
+      padding: 1rem;
+
+      &-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+        padding: 1rem 0rem;
+
+        .head {
+          display: inline-block;
+          color: $font-secondary;
+          margin-bottom: 5px;
+        }
+
+        .sub {
+          color: $font-primary;
+        }
+
+
+        div {
+          width: 30%;
+
+          &:nth-child(n) {
+            text-align: center;
+          }
+
+          &:last-child {
+            text-align: end;
+          }
+
+          &:first-child {
+            text-align: start;
+          }
+        }
+
+
+      }
+    }
+
+  }
+
+}
+
+.heading {
+  color: $font-primary;
+  line-height: 1.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+
+  &-2 {
+    color: $font-primary;
+    line-height: 1rem;
+    font-weight: 300;
+  }
+}
+
+.sub-heading {
+  font-size: 1rem;
+  color: $font-secondary;
+}
+
+.text-err {
+  color: $font-err !important;
+}
+
+.para {
+  font-size: 0.9rem;
+}
