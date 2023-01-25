@@ -5,13 +5,13 @@ function WalletCard({ walletAddress, walletBalance }) {
         <div className="wallet-card">
             <div className="wallet-card__header">
                 <div className="token-details ">
-                    <span className='sub-heading'>DCA</span>
+                    <span className='token-details-head'>DCA</span>
                     <br />
-                    <span className='heading'>(ETH/USDT)</span>
+                    <span className='sub-heading'>(ETH/USDT)</span>
                 </div>
                 <div className="token-actions">
-                    <div className='token-actions__action'>A</div>
-                    <div className='token-actions__action'>B</div>
+                    <div className='token-actions__action'>&#169;</div>
+                    <div className='token-actions__action'>	&#174;</div>
                 </div>
             </div>
 

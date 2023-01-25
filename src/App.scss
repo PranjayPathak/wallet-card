@@ -40,22 +40,32 @@ $font-secondary: #cbcbcb;
 .wallet-card {
   background-color: $background-secondary;
   // min-height: 25rem;
-  width: 25rem;
+  width: 23rem;
   border-radius: 0.5rem;
   margin: auto;
 
   &__header {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 0rem 0.5rem 0rem;
+    padding: 1.1rem 0rem 0.5rem 0rem;
     margin: 0 1rem;
     border-bottom: 0.2rem double $highlight-color;
 
+    .token-details{
+      &-head{
+        font-size: 1rem;
+        color: $font-primary;
+        line-height: 1.5rem;
+        font-weight: 600;
+      }
+    }
     .token-actions {
       display: flex;
       gap: 0.5rem;
 
       &__action {
+        font-size: 3rem;
+        // font-weight: 600;
         display: flex;
         justify-content: center;
         align-items: center;
